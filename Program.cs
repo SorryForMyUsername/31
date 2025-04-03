@@ -101,11 +101,11 @@ namespace _31
                 {
                     case 'а':
                     case 'А':
-                        Console.WriteLine($"Площадь фигуры: {figure.Area()}");
+                        Console.WriteLine($"Площадь фигуры: {figure.Area():f2}");
                         break;
                     case 'п':
                     case 'П':
-                        Console.WriteLine($"Периметр фигуры: {figure.Perimeter()}");
+                        Console.WriteLine($"Периметр фигуры: {figure.Perimeter():f2}");
                         break;
                     case 'и':
                     case 'И':
@@ -148,7 +148,7 @@ namespace _31
             bool isEnd;
             do
             {
-                isEnd = true;
+                isEnd = false;
                 char c = Console.ReadKey(true).KeyChar;
 
                 switch (c)
@@ -170,7 +170,7 @@ namespace _31
                         figures.Add(Circle.Input());
                         break;
                     default:
-                        isEnd = false;
+                        isEnd = true;
                         break;
                 }
             } while (isEnd);

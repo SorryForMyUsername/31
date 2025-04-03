@@ -42,7 +42,7 @@ namespace _31
         public override void Print()
         {
             base.Print();
-            Console.WriteLine($"Сторона: {Side}");
+            Console.WriteLine($"Сторона: {Side}\n");
         }
 
         public override void EditProperty()

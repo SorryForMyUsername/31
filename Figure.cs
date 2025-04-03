@@ -31,7 +31,7 @@ namespace _31
         public abstract void EditProperty();
         public virtual void Print()
         {
-            Console.Write($"Название фигуры: {Name}\t");
+            Console.Write($"Название фигуры: {Name}\n");
         }
     }
 }

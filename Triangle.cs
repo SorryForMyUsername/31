@@ -38,7 +38,7 @@ namespace _31
         public override void Print()
         {
             base.Print();
-            Console.WriteLine($"1-я сторона: {Side1}\t2-я сторона {Side2}\t3-я сторона: {Side3}");
+            Console.WriteLine($"1-я сторона: {Side1}\n2-я сторона {Side2}\n3-я сторона: {Side3}\n");
         }
 
         public override void EditProperty()
@@ -59,17 +59,17 @@ namespace _31
                 {
                     case 'н':
                     case 'Н':
-                        Console.Write("Введите новое значение для свойства \"Название\":");
+                        Console.Write("Введите новое значение для свойства \"Название\": ");
                         Name = Console.ReadLine();
                         break;
                     case 'п':
                     case 'П':
-                        Console.Write("Введите новое значение для свойства \"Первая сторона\":");
+                        Console.Write("Введите новое значение для свойства \"Первая сторона\": ");
                         Side1 = int.Parse(Console.ReadLine());
                         break;
                     case 'в':
                     case 'В':
-                        Console.Write("Введите новое значение для свойства \"Вторая сторона\":");
+                        Console.Write("Введите новое значение для свойства \"Вторая сторона\": ");
                         Side2 = int.Parse(Console.ReadLine());
                         break;
                     case 'т':

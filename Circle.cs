@@ -42,7 +42,7 @@ namespace _31
         public override void Print()
         {
             base.Print();
-            Console.WriteLine($"Радиус: {Raduis}");
+            Console.WriteLine($"Радиус: {Raduis}\n");
         }
 
         public override void EditProperty()
@@ -61,12 +61,12 @@ namespace _31
                 {
                     case 'н':
                     case 'Н':
-                        Console.Write("Введите новое значение для свойства \"Название\":");
+                        Console.Write("Введите новое значение для свойства \"Название\": ");
                         Name = Console.ReadLine();
                         break;
-                    case 'п':
-                    case 'П':
-                        Console.Write("Введите новое значение для свойства \"Радиус\":");
+                    case 'р':
+                    case 'Р':
+                        Console.Write("Введите новое значение для свойства \"Радиус\": ");
                         Raduis = int.Parse(Console.ReadLine());
                         break;
                     default:
